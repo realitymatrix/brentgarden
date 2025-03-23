@@ -1,0 +1,8 @@
+# version: '3'
+
+services:
+  website:
+    container_name: 'brentgarden'
+    image: websites/brentgarden
+    restart: always
+    network_mode: host
