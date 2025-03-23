@@ -1,0 +1,263 @@
+.desktop {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    }
+  
+.box {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    background-image: url(img/rectangle-15.png);
+    }
+  
+.group {
+    width: 190px;
+    height: 84px;
+    top: 0;
+    left: 0;
+    background-image: url(img/logo3.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 8px;
+    }
+  
+.rectangle {
+    width: 38px;
+    height: 31px;
+    top: 3px;
+    left: 10px;
+    object-fit: cover;
+    }
+
+.navigation-pill-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--size-space-200);
+    padding: var(--size-space-200);
+    top: 25px;
+    flex-wrap: wrap;
+    } 
+
+.menu {
+    display: inline-flex;
+    padding: 4px;
+    width: auto;
+}
+
+.menu-auth {
+    display: flex;
+}
+
+.title-2 {
+    padding: var(--size-space-200);
+    font-size: 16px;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: black;
+    border: none;
+    text-decoration: none;
+    position: relative;
+}
+
+.title-2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+  }
+
+.title-2:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+.title-2:hover {
+    color: rgb(0, 181, 0)
+}
+
+.header-auth {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--size-space-200);
+    padding: var(--size-space-200);
+    flex-wrap: wrap;
+    top: 25px;
+    right: 8px;
+    width: auto;
+    }
+
+.button-2 {
+    background-color: rgb(0, 198, 0);
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 12px;
+    width: 100px;
+}
+
+.button-2:hover {
+    background-color: rgb(0, 181, 0);
+}
+
+.button-2:active {
+    transform: translateY(2px);
+}
+
+.button-4 {
+    background-color: rgb(32, 108, 32);
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 12px;
+    width: 100px;
+}
+
+.button-4:hover {
+    background-color: rgb(0, 181, 0);
+}
+
+.button-4:active {
+    transform: translateY(2px);
+}
+
+.header {
+    unicode-bidi: isolate;
+    box-sizing: border-box;
+    }
+
+.head-1 {
+    display: flex;
+    position: static;
+    width: 50%;
+    height: 380px;
+    background-image: url(img/brentgarden.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.head .rectangle {
+    width: 50%;
+    height: 380px;
+    top: 85px;
+    left: 0;
+}
+
+
+.button-head {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid;
+    border-color: #d7ffcd;
+    border-radius: var(--size-radius-200);
+    background-color: #d7ffcd;
+    gap: var(--size-space-200);
+    padding: 12px;
+    margin-top: 15px;
+    font-family: 'Comic Sans MS', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.button-head:hover {
+    background-color: rgb(0, 181, 0);
+}
+
+.button-head:active {
+    transform: translateY(2px);
+}
+
+.text-head {
+    display: flex;
+    width: 95%;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 2%;
+}
+
+.text_area {
+    position: relative;
+    left: 0%;
+    top: 0;
+    background: rgba(0,0,0,0.65);
+    width: 100%;
+    height: 100%;
+    padding-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.text-head-description {
+    display: flex;
+    width: 95%;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 2%;
+}
+
+.image_veg {
+    width: 50%;
+    right: 0;
+    background-image: url(img/scale_1200.png);
+}
+
+.head {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    background-image: url(img/rectangle-15.png);
+    background-size: cover;
+    height: 310px;
+    width: 100%;
+}
+
+.main_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    width: 100%;
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+
+.main_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    border-color: #d7ffcd;
+    background-color: #d4ffd4a8;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.icons {
+    width: 75px;
+    height: 75px;
+}
+
+
