@@ -9,6 +9,5 @@ RUN python -m pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 EXPOSE 80
-EXPOSE 443
 
 CMD ["python", "./app.py"]
