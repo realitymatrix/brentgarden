@@ -9,5 +9,5 @@ htmlcov/
 dist/
 build/
 *.egg-info/
-cert.pem
-key.pem
+ssl/cert.pem
+ssl/key.pem

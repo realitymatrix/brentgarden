@@ -4,5 +4,7 @@ services:
   website:
     container_name: 'brentgarden'
     image: websites/brentgarden
+    volumes:
+      - ./ssl/:/.ssl
     restart: always
     network_mode: host
