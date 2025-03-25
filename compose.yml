@@ -1,10 +1,30 @@
 # version: '3'
 
+networks:
+  zen_network:
+
 services:
+  nginx:
+    image: nginx:latest
+    container_name: production_nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - '80:80'
+      - '443:443'
+    networks:
+      zen_network:
+        aliases:
+          - nginx
   website:
     container_name: 'brentgarden'
     image: websites/brentgarden
     volumes:
       - ./ssl/:/.ssl
     restart: always
-    network_mode: host
+    ports:
+      - '8080:8080'
+    networks:
+      zen_network:
+        aliases:
+          - brentgarden
