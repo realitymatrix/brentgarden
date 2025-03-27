@@ -3,12 +3,16 @@
     display: flex;
     flex-direction: column;
     }
-  
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .box {
     display: flex;
     width: 100%;
     justify-content:space-between;
-    background-color: transparent;
     border-radius: 2px;
     border-image: linear-gradient(to right, #fff720 0%, #3cd500 100%) 1;
     border-bottom-width: 4px;
@@ -53,6 +57,7 @@
     display: inline-flex;
     padding: 4px;
     width: auto;
+    gap: 3%
 }
 
 .menu-auth {
@@ -93,7 +98,7 @@
 }
 
 .header-auth {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: flex-end;
     gap: var(--size-space-200);
@@ -150,10 +155,85 @@
     position: static;
     width: 50%;
     height: 380px;
-    background-image: url(./img/brentgarden.png);
+    /* background-image: url(./img/brentgarden.png); */
     background-size: cover;
     background-position: 50% 50%;
+    object-fit: cover;
 }
+
+.photo {
+    position: absolute;
+    opacity: 0;
+    animation: slideshow 25s linear infinite;
+}
+
+@keyframes slideshow {
+    from {
+        opacity: 0;
+        filter: grayscale(100%);
+    }
+
+    5% {
+        opacity: 1;
+        filter: grayscale(50%);
+    }
+
+    10% {
+        opacity: 1;
+        filter: grayscale(0);
+    }
+
+    15% {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    20% {
+        opacity: 0;
+        filter: blur(2px);
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+}
+
+.head-1 .i_1 {
+    animation-delay: 0s;
+    object-fit: cover;
+    height: 380px;
+    width: 50%;
+}
+
+.head-1 .i_2 {
+    animation-delay: 5s;
+    object-fit: cover;
+    height: 380px;
+    width: 50%;
+}
+
+.head-1 .i_3 {
+    animation-delay: 10s;
+    object-fit: cover;
+    height: 380px;
+    width: 50%;
+}
+
+.head-1 .i_4 {
+    animation-delay: 15s;
+    object-fit: cover;
+    height: 380px;
+    width: 50%;
+}
+
+.head-1 .i_5 {
+    animation-delay: 20s;
+    object-fit: cover;
+    height: 380px;
+    width: 50%;
+}
+
 
 .image_veg {
     width: 50%;
@@ -236,8 +316,8 @@
     display: flex;
     background-size: cover;
     width: 100%;
-    background-color: transparent;
     margin-top: 1%;
+    padding: 5%;
 }
 
 .main_buttons {
@@ -246,7 +326,6 @@
     justify-content: center;
     align-content: space-around;
     width: 100%;
-    background-color: transparent;
     flex-wrap: wrap;
     gap:20px
 }
@@ -326,6 +405,17 @@
     transform: rotate(45deg) translate(0, 50%);
 }
 
+footer {
+    background: linear-gradient(to right, #fff720 0%, #3cd500 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    width: 100%;
+    margin-top: auto;
+}
+
 @media (max-width: 1200px) {
     .desktop {
         width: 100%;
@@ -378,6 +468,21 @@
     .head-1, .image_veg {
         width: 100%;
     }
+    .head-1 .i_1 {
+        width: 100%;
+    }
+    .head-1 .i_2 {
+        width: 100%;
+    }
+    .head-1 .i_3 {
+        width: 100%;
+    }
+    .head-1 .i_4 {
+        width: 100%;
+    }
+    .head-1 .i_5 {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -388,6 +493,21 @@
         flex-direction: column;
     }
     .head-1, .image_veg {
+        width: 100%;
+    }
+    .head-1 .i_1 {
+        width: 100%;
+    }
+    .head-1 .i_2 {
+        width: 100%;
+    }
+    .head-1 .i_3 {
+        width: 100%;
+    }
+    .head-1 .i_4 {
+        width: 100%;
+    }
+    .head-1 .i_5 {
         width: 100%;
     }
 }
