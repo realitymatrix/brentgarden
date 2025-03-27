@@ -361,7 +361,15 @@ body {
     padding: 5px;
     border-radius: 20px;
     background: linear-gradient(to right, #3cd500 0%, #fff720 100%);
+    transition: all 5s;
+    background-position: 0% 0%;
 }
+
+.element-border:hover {
+    background: linear-gradient(to left, #3cd500 0%, #fff720 100%);
+    background-position: 100% 0%;
+}
+
 
 .icons {
     width: 75px;
