@@ -22,5 +22,17 @@ def maps():
 def news():
     return render_template(template_name_or_list='news.html')
 
+@app.route("/resources")
+def resources():
+    return render_template(template_name_or_list='resources.html')
+
+@app.route("/about")
+def about():
+    return render_template(template_name_or_list='about.html')
+
+@app.route("/contact")
+def contact():
+    return render_template(template_name_or_list='contact.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=80)
